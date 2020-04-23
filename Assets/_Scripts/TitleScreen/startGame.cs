@@ -10,9 +10,4 @@ public class startGame : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-
-    public void RestartGame(int SceneIndex)
-    {
-        SceneManager.LoadScene(0);
-    }
 }
