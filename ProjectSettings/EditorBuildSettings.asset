@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/04-Me-VerbPart1.unity
     guid: 41726286ca7a5f940a8ebd27914d0d80
-  - enabled: 0
-    path: Assets/_Scenes/TemplateScene1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/_Scenes/10-Endscreen.unity
+    guid: 60c14194edd99994080201e7f23a6475
   m_configObjects: {}
