@@ -765,28 +765,22 @@ MonoBehaviour:
   instruction:
     name: Instructor
     sentences:
-    - 'Great, now you have some words, you can create sentences, by put them in order.
+    - 'Awesome!
 
-      Saya tulis buku.'
-    - 'But...
 
-      Something is a bit off here.'
-    - You cannot say it like that!
-    - We need to transform it to the me- form, menulis, to make it identify what the
-      subject doing.
-    - 'So, in I write a book... I DO write a book...
+      Easy, isn''t it?'
+    - Now, another fun fact!
+    - There is also me- words that morphs from adjective.
+    - It turns the adjectives to the verbs that means...
+    - Action that causing the adjective.
+    - 'Gelap... is dark.
 
-      Saya menulis buku...'
-    - 'Now, let''s try to morph a couple of other words!
+      Langit menggelap di sore hari means...
 
-      Utilize the translator, don''t choose a wrong word!'
-    - 'Don''t worry, for the next task, I won''t give you the verbs that does NOT
-      need to morph.
-
-'
-    - Now, before you drag it to the answer field, you need to transform the word
-      to the correct form first!
-    - HERE WE GOOOO!!!
+      The sky is getting dark at dawn.'
+    - A little bit less complex than the nouns!
+    - But we'll try to practice it next time!
+    - Thank you for playing!
 --- !u!1 &957401910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1283,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: 'Chapter I: me- Form Verbs Part 1'
+  m_Text: 'Chapter 3: me- Form Adjective'
 --- !u!222 &1642148714
 CanvasRenderer:
   m_ObjectHideFlags: 0

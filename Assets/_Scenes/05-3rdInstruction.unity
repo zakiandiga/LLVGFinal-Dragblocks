@@ -765,27 +765,26 @@ MonoBehaviour:
   instruction:
     name: Instructor
     sentences:
-    - 'Great, now you have some words, you can create sentences, by put them in order.
+    - 'Great!
 
-      Saya tulis buku.'
-    - 'But...
+      Easy isn''t it?'
+    - So that was the most basic me- verbs.
+    - Now, we can transform nouns to the me- forms.
+    - 'In this case, me- nouns morphs into a verb which could means:'
+    - '1. Action that use the nouns.
 
-      Something is a bit off here.'
-    - You cannot say it like that!
-    - We need to transform it to the me- form, menulis, to make it identify what the
-      subject doing.
-    - 'So, in I write a book... I DO write a book...
+      2. Action that produce the nouns.
 
-      Saya menulis buku...'
-    - 'Now, let''s try to morph a couple of other words!
+      3. Action that act like the nouns.'
+    - 'For example, sapu is a broom.
 
-      Utilize the translator, don''t choose a wrong word!'
-    - 'Don''t worry, for the next task, I won''t give you the verbs that does NOT
-      need to morph.
+      Saya menyapu lantai means I clean up the floor.'
+    - "Literally, it also means, \nI 'do something that use a broom'"
+    - So remember, to express the noun, use the root word, but to specify 'doing something'
+      related to the noun, transform it to me-!
+    - 'Now let try this. I''ll say a sentence...
 
-'
-    - Now, before you drag it to the answer field, you need to transform the word
-      to the correct form first!
+      Then you have to specify whether I use the root or the me- form!'
     - HERE WE GOOOO!!!
 --- !u!1 &957401910
 GameObject:
@@ -1289,7 +1288,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.3
-  m_Text: 'Chapter I: me- Form Verbs Part 1'
+  m_Text: 'Chapter 2: me- Form Nouns Part 1'
 --- !u!222 &1642148714
 CanvasRenderer:
   m_ObjectHideFlags: 0

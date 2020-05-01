@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/04-Me-VerbPart1.unity
     guid: 41726286ca7a5f940a8ebd27914d0d80
+  - enabled: 1
+    path: Assets/_Scenes/05-3rdInstruction.unity
+    guid: 5e4ff98713eafea489ae372ce31f2a63
+  - enabled: 1
+    path: Assets/_Scenes/06-Me-Noun.unity
+    guid: 91e5af9d743617c47b6a81a225198d6d
+  - enabled: 1
+    path: Assets/_Scenes/07-4thInstruction.unity
+    guid: fccbc0c3b1221c646a51425bd1151f1a
   - enabled: 0
     path: Assets/_Scenes/TemplateScene1.unity
     guid: 2cda990e2423bbf4892e6590ba056729

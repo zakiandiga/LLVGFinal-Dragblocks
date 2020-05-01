@@ -10,4 +10,9 @@ public class startGame : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void BackToGame(int SceneIndex)
+    {
+        SceneManager.LoadScene(0);
+    }
 }

@@ -27,6 +27,8 @@ public class QuestionManager : MonoBehaviour
     bool noQuestion = false;
     float currentTime;
     float startingTime = 3f;
+    int QuestionIndex;
+    public static int QuestionIndexSend;
 
     void Start()
     {
@@ -50,7 +52,7 @@ public class QuestionManager : MonoBehaviour
 
     void SetCurrentQuestion()
     {
-        int QuestionIndex = Random.Range(0, (unansweredQuestion.Count - 1));
+        QuestionIndex = Random.Range(0, (unansweredQuestion.Count - 1));
         currentQuestion = unansweredQuestion[QuestionIndex];
 
         //Testing clearing list after last question assigned to current question
@@ -76,6 +78,8 @@ public class QuestionManager : MonoBehaviour
 
     public void CorrectAnswer()
     {
+        //return QuestionIndex;
+        
 
         if (currentQuestion.answerCode == answerProc.answerType &&
             currentQuestion.answerBlock == answerProc.answerWord)
@@ -97,9 +101,11 @@ public class QuestionManager : MonoBehaviour
         if ((currentQuestion.answerCode != answerProc.answerType) ||
             (currentQuestion.answerBlock != answerProc.answerWord))
         {
-            Debug.Log("Wrong Answer!");
+            Debug.Log("Wrong Answer! " + QuestionIndex);
+
             currentTime = startingTime;
-            
+            print(QuestionIndex);
+            QuestionIndexSend = QuestionIndex;
             curtainWrong.SetActive(true);
             isRestart = true;            
         }        
@@ -110,7 +116,7 @@ public class QuestionManager : MonoBehaviour
         if (isRestart)
         {
             currentTime -= 1 * Time.deltaTime;
-            print("Count Down " + currentTime);
+            //print("Count Down " + currentTime);
         }
         if (currentTime <= 0.1f)
         {
