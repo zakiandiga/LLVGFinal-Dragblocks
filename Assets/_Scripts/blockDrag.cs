@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class blockDrag : MonoBehaviour
+public class blockDrag : MonoBehaviour, IPointerDownHandler
 {
     public GameObject questionManager;
     private float startX;
@@ -11,7 +12,7 @@ public class blockDrag : MonoBehaviour
     public bool isDraggable = true;
     public bool isDragged = false;
     
-    private static int status = 1;
+    public static int status = 1;
     public static int wordForm = 1;
     
     void Start()
@@ -21,7 +22,12 @@ public class blockDrag : MonoBehaviour
         
     }
 
-    private void OnTriggerStay2D (Collider2D col)
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log("OnPointerDown");
+    }
+
+    void OnTriggerStay2D (Collider2D col)
     {
         if(col.gameObject.name == "Translate" && Input.GetMouseButtonUp(0))
         {            
@@ -33,21 +39,23 @@ public class blockDrag : MonoBehaviour
             status = 1;
             Debug.Log("Root");
         }
-        if (col.gameObject.name == "me" && Input.GetMouseButtonUp(0))
+        if (col.gameObject.name == "me-" && Input.GetMouseButtonUp(0))
         {
             status = 2;
-            Debug.Log("Root");
+            Debug.Log("me");
         }
     }
-
-    void LateUpdate()
+    
+    void Update()
     {        
-        
+        /*
         if (isDragged)
         {
             transform.position = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //GetComponent<BoxCollider2D>().isTrigger = false;
         }
+        */
+
         if (QuestionManager.isRestart == true)
         {
             transform.localPosition = new Vector3(startX, startY, 0);
@@ -59,11 +67,13 @@ public class blockDrag : MonoBehaviour
         
     }
 
+    /*
     void OnMouseDown()
     {        
         if(isDraggable) //&& Input.GetMouseButtonDown(0))
         {
-            isDragged = true;            
+            isDragged = true;
+            Debug.Log("isDrag = " + isDragged);
         }        
     }
 
@@ -71,5 +81,7 @@ public class blockDrag : MonoBehaviour
     {
         isDragged = false;
         wordForm = status;
+        Debug.Log("isDrag = " + isDragged);
     }
+    */
 }

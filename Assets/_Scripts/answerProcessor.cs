@@ -18,6 +18,13 @@ public class answerProcessor : MonoBehaviour
 
     void Update()
     {
+        answerType = textBehavior.newText;
+        //answerWord = text
+    }
+
+    /*
+    void Update()
+    {
         answerType = blockDrag.wordForm;
     }
 
@@ -28,7 +35,7 @@ public class answerProcessor : MonoBehaviour
 
 
     }    
-
+    */
 
 
 }

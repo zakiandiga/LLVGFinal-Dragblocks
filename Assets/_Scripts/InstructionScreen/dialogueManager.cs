@@ -9,6 +9,7 @@ public class dialogueManager : MonoBehaviour
     //public Text nameText; USE IF DISPLAYING SPEAKER NAME
     public Text dialogueText;
     public GameObject playButton;
+    
     private Queue<string> sentences;
 
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class dialogueManager : MonoBehaviour
     {
         sentences = new Queue<string>();
         Debug.Log("Start " + sentences);
+        
         
     }
 
@@ -50,6 +52,7 @@ public class dialogueManager : MonoBehaviour
     void EndDialogue()
     {
         Debug.Log("End of instruction!");
+        //this.gameObject.SetActive(false);
         playButton.SetActive(true);
 
         //initiate go to next scene here!

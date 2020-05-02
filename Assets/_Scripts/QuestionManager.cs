@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class QuestionManager : MonoBehaviour
 {
-    public GameObject answerProcessor;
+    public GameObject answerHandler;
     public GameObject curtainCorrect;
     public GameObject curtainWrong;
-    answerProcessor answerProc;
+    answerHandler answerProc;
     public static bool isRestart = false;
 
     public Question[] questions;
@@ -32,7 +32,7 @@ public class QuestionManager : MonoBehaviour
 
     void Start()
     {
-        answerProc = answerProcessor.GetComponent<answerProcessor>();
+        answerProc = answerHandler.GetComponent<answerHandler>();
         
         if (unansweredQuestion == null || unansweredQuestion.Count == 0)
         {
@@ -54,6 +54,7 @@ public class QuestionManager : MonoBehaviour
     {
         QuestionIndex = Random.Range(0, (unansweredQuestion.Count - 1));
         currentQuestion = unansweredQuestion[QuestionIndex];
+        QuestionIndexSend = QuestionIndex;
 
         //Testing clearing list after last question assigned to current question
         if (unansweredQuestion.Count == 2)
@@ -72,7 +73,7 @@ public class QuestionManager : MonoBehaviour
 
         yield return new WaitForSeconds(timeBetweenTask);
         curtainCorrect.SetActive(false);
-        blockDrag.wordForm = 1;
+        textBehavior.newText = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -90,6 +91,7 @@ public class QuestionManager : MonoBehaviour
             {
                 //set delay for loading next scene
                 Debug.Log("No more question in this scene!");
+                textBehavior.newText = 1;
                 SceneManager.LoadScene((SceneManager.GetActiveScene().buildIndex) + 1);
             }
             else
@@ -105,7 +107,7 @@ public class QuestionManager : MonoBehaviour
 
             currentTime = startingTime;
             print(QuestionIndex);
-            QuestionIndexSend = QuestionIndex;
+            
             curtainWrong.SetActive(true);
             isRestart = true;            
         }        

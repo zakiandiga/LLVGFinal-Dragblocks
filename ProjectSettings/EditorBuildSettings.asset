@@ -12,21 +12,24 @@ EditorBuildSettings:
     path: Assets/_Scenes/01-Introduction.unity
     guid: 8231f19041a7f124cb1800fb126f9bb7
   - enabled: 1
-    path: Assets/_Scenes/02-TheBasicWords.unity
-    guid: 117a1debd86c1984995be94b9b639a8a
+    path: Assets/_Scenes/02-basicVocab.unity
+    guid: 0356d89bae0f08d49907d6da662face4
   - enabled: 1
-    path: Assets/_Scenes/04-Me-VerbPart1.unity
-    guid: 41726286ca7a5f940a8ebd27914d0d80
+    path: Assets/_Scenes/03-2ndInstruction.unity
+    guid: 43b3ca621c06b2b4ab7b81d8d2e27084
   - enabled: 1
-    path: Assets/_Scenes/05-3rdInstruction.unity
-    guid: 5e4ff98713eafea489ae372ce31f2a63
+    path: Assets/_Scenes/04-me-Verbs.unity
+    guid: ea926747bce71b049aea6d8145c7d9f5
+  - enabled: 1
+    path: Assets/_Scenes/05-3rdInstruction 1.unity
+    guid: c42ad49d382e50d4d8b2d58d77d4285c
   - enabled: 1
     path: Assets/_Scenes/06-Me-Noun.unity
     guid: 91e5af9d743617c47b6a81a225198d6d
   - enabled: 1
     path: Assets/_Scenes/07-4thInstruction.unity
-    guid: fccbc0c3b1221c646a51425bd1151f1a
-  - enabled: 0
-    path: Assets/_Scenes/TemplateScene1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: f0cb753751d0a504aac1ac60f4a629c8
+  - enabled: 1
+    path: Assets/_Scenes/08-EndSceneTemp.unity
+    guid: a49853e012a2e4d44a20d61c60407b56
   m_configObjects: {}

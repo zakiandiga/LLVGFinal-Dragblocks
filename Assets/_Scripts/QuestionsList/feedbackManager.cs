@@ -26,7 +26,9 @@ public class feedbackManager : MonoBehaviour
 
     void Update()
     {
-        FeedbackText();        
+        //FeedbackText();
+        questionIndex = QuestionManager.QuestionIndexSend;
+        dialogueText.text = feedbacks[questionIndex];
     }
     
     // Start is called before the first frame update
