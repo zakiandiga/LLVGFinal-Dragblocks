@@ -9,7 +9,7 @@ public class answerHandler : MonoBehaviour, IDropHandler
 {
 
     public string answerWord;
-    public int answerType;
+    public int answerType = 1;
 
 
     void Update()

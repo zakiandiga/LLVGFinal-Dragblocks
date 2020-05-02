@@ -13,7 +13,7 @@ public class textBehavior : MonoBehaviour
     public string mekan;
     public string mei;
     public string translate;
-    public static int newText;
+    public static int newText = 1;
     /*
     public KeyCode rootBu;
     public KeyCode meBu;
